@@ -144,9 +144,8 @@ const Contact = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Office Address</h3>
                     <p className="text-gray-700">
-                      13-6-759/H, Shop No: 8, PSR Complex<br />
-                      Sandya Theatre Road, Near APSRTC Bus Stand<br />
-                      Tirupati, Andhra Pradesh - 517501
+                      22-4-63, Sri Lakshmi Ranga Water Front Apartment - 409,<br />
+                       Annamayya Marg Vinayak Sagar Park,Tirupati,AP
                     </p>
                   </div>
                 </div>
@@ -290,25 +289,24 @@ const Contact = () => {
           <div className="bg-white rounded-lg shadow-lg p-4">
             <div className="w-full h-96 rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.4248677891596!2d79.428738!3d13.6319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4ba8f18344c5%3A0x5679f56a0e496693!2sVaishnavi%20Tours%20and%20Travels!5e0!3m2!1sen!2sin!4v1752064209165!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.279479230516!2d79.43914612482922!3d13.640755899855318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b0016d8df0f%3A0x3e7cf27ceb8f3306!2sSri%20Lakshmi%20Ranga%20water%20front%20Apartment!5e0!3m2!1sen!2sin!4v1752237193584!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Vaishnavi Tours and Travels, PSR Complex, Sandya Theatre Road, Tirupati"
+                title="Vaibhav Tours and Travels,Annamayya Marg Vinayak Sagar Park,Tirupati"
               ></iframe>
             </div>
             <div className="mt-4 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Visit Our Office</h3>
               <p className="text-gray-600 mb-4">
-                13-6-759/H, Shop No: 8, PSR Complex<br />
-                Sandya Theatre Road, Near APSRTC Bus Stand<br />
-                Tirupati, Andhra Pradesh - 517501
+                22-4-63, Sri Lakshmi Ranga Water Front Apartment - 409
+                 Annamayya Marg Vinayak Sagar Park,Tirupati,AP
               </p>
               <a
-                href="https://maps.google.com/?q=13-6-759/H,PSR+Complex,Sandya+Theatre+Road,Tirupati"
+                href="https://maps.app.goo.gl/mVxWkqxLCF6SH6ZJ9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
