@@ -246,7 +246,7 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Visit Office</h3>
                 <p className="text-gray-600 mb-4">Walk-in bookings welcome</p>
-                <span className="text-gray-700 font-medium">Gandhi Road, Tirupati</span>
+                <span className="text-gray-700 font-medium">13-6-759/H, Shop No: 8, PSR Complex,Sandya Theatre Road, Near APSRTC Bus Stand Tirupati, Andhra Pradesh - 517501</span>
               </div>
             </div>
           </div>
