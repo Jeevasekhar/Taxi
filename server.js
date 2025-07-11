@@ -17,15 +17,15 @@ app.post('/api/send-email', async (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: 'akashnuka04@gmail.com',
-      pass: 'frlhjcaaeblhymux',
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
     },
   });
 
   try {
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
-      to: 'akashnuka04@gmail.com',
+      to: process.env.CONTACT_RECEIVER,
       subject: `New Contact Form Submission from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`,
       html: `
