@@ -79,39 +79,40 @@ const Home = () => {
 
       {/* Quick Highlights */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-yellow-400 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Clock className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">24/7 Service</h3>
-              <p className="text-gray-600">Available round the clock for your convenience</p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="text-center">
+            <div className="bg-yellow-400 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <Clock className="h-8 w-8 text-black" />
             </div>
-            <div className="text-center">
-              <div className="bg-yellow-400 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Shield className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Professional Drivers</h3>
-              <p className="text-gray-600">Experienced and licensed drivers</p>
+            <h3 className="text-xl font-semibold mb-2">24/7 Service</h3>
+            <p className="text-gray-600">Available round the clock for your convenience</p>
+          </div>
+          <div className="text-center">
+            <div className="bg-yellow-400 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <Shield className="h-8 w-8 text-black" />
             </div>
-            <div className="text-center">
-              <div className="bg-yellow-400 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Mountain className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Pilgrimage Packages</h3>
-              <p className="text-gray-600">Special tours for spiritual destinations</p>
+            <h3 className="text-xl font-semibold mb-2">Professional Drivers</h3>
+            <p className="text-gray-600">Experienced and licensed drivers</p>
+          </div>
+          <div className="text-center">
+            <div className="bg-yellow-400 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <Mountain className="h-8 w-8 text-black" />
             </div>
-            <div className="text-center">
-              <div className="bg-yellow-400 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Plane className="h-8 w-8 text-black" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Airport Pickup</h3>
-              <p className="text-gray-600">Convenient airport transfer services</p>
+            <h3 className="text-xl font-semibold mb-2">Pilgrimage Packages</h3>
+            <p className="text-gray-600">Special tours for spiritual destinations</p>
+          </div>
+          <div className="text-center">
+            <div className="bg-yellow-400 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <Plane className="h-8 w-8 text-black" />
             </div>
+            <h3 className="text-xl font-semibold mb-2">Airport Pickup</h3>
+            <p className="text-gray-600">Pickup and drop to airports</p>
           </div>
         </div>
-      </section>
+        
+      </div>
+    </section>
 
       {/* Services Section */}
       <section className="py-16 bg-white">

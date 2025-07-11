@@ -1,6 +1,7 @@
-
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, MessageCircle, Send, User, MessageSquare } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageCircle, Send, User } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,18 +19,44 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-    alert('Thank you for your inquiry! We will contact you shortly.');
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      service: '',
-      message: ''
-    });
+    try {
+      const response = await fetch('http://localhost:5000/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert('Thank you for your inquiry! We will contact you shortly.');
+        setFormData({
+          name: '',
+          phone: '',
+          email: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        let errorMsg = 'Failed to send email. Please try again later.';
+        try {
+          const errorData = await response.json();
+          if (errorData.error) {
+            errorMsg = `Failed to send email: ${errorData.error}`;
+            if (errorData.details) {
+              errorMsg += `\nDetails: ${errorData.details}`;
+            }
+          }
+        } catch (jsonErr) {
+          // ignore JSON parse errors
+        }
+        alert(errorMsg);
+      }
+    } catch (error) {
+      alert('Failed to send email. Network or server error.');
+      console.error('SMTP error:', error);
+    }
   };
 
   return (
@@ -223,7 +250,7 @@ const Contact = () => {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message *
+                    Your Message *
                   </label>
                   <div className="relative">
                     <MessageSquare className="absolute left-3 top-3 h-5 w-5 text-gray-400" />

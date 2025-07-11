@@ -17,6 +17,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <NavLink to="/" className="flex items-center">
+              <img src="/Gemini_Generated_Image_57zttx57zttx57zt.png" alt="Taxi Logo" className="h-19 w-20 mr-2  shadow" />
               <div className="bg-yellow-400 text-black px-3 py-2 rounded-lg font-bold text-xl">
                 TAXI
               </div>
