@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start">
                 <MapPin size={18} className="text-yellow-400 mr-3 mt-1 flex-shrink-0" />
-                <p className="text-gray-300 leading-relaxed">22-4-63, Sri Lakshmi Ranga Water Front Apartment - 409, <br />Annamayya Marg Vinayak Sagar Park,Tirupati,AP</p>
+                <p className="text-gray-300 leading-relaxed">22-4-63, Sri Lakshmi Ranga Water Front Apartment - 409, <br />Annamayya Marg, Vinayak Sagar Park,Tirupati,AP</p>
               </div>
               <div className="flex items-start">
                 <Clock size={18} className="text-yellow-400 mr-3 mt-1" />
