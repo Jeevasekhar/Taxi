@@ -22,7 +22,7 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/send-email', {
+      const response = await fetch('/src/pages/api/send-mail.js', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

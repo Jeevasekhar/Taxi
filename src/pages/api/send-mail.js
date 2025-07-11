@@ -1,21 +1,16 @@
-import express from 'express';
 import nodemailer from 'nodemailer';
-import bodyParser from 'body-parser';
-import cors from 'cors';
 
-const app = express();
-const PORT = process.env.PORT || 5000;
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
 
-app.use(cors());
-app.use(bodyParser.json());
-
-app.post('/api/send-email', async (req, res) => {
   const { name, email, phone, service, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    host: process.env.SMTP_HOST,
+    port: parseInt(process.env.SMTP_PORT || '465'),
+    secure: process.env.SMTP_SECURE === 'true',
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
@@ -36,13 +31,10 @@ app.post('/api/send-email', async (req, res) => {
         <p><strong>Message:</strong> ${message}</p>
       `
     });
+
     res.status(200).json({ success: true });
   } catch (error) {
     console.error('Email send error:', error);
     res.status(500).json({ error: 'Failed to send email', details: error.message });
   }
-});
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+}
