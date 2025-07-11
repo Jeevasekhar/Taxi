@@ -15,7 +15,7 @@ const Services = () => {
         "Meet & greet service",
         "Luggage assistance"
       ],
-      pricing: "Starting from ₹800",
+      pricing: "Starting from ₹2500",
       duration: "As per distance"
     },
     {
@@ -29,7 +29,7 @@ const Services = () => {
         "Multi-temple packages",
         "Customized itineraries"
       ],
-      pricing: "Starting from ₹1200",
+      pricing: "Starting from ₹3200",
       duration: "Full day/Half day"
     },
     {
@@ -43,7 +43,7 @@ const Services = () => {
         "Restaurant transfers",
         "Flexible timing"
       ],
-      pricing: "₹300/hour",
+      pricing: "₹600/hour",
       duration: "Minimum 4 hours"
     },
     {
@@ -94,21 +94,21 @@ const Services = () => {
     {
       name: "Tirumala Darshan Package",
       duration: "12 Hours",
-      price: "₹1,500",
+      price: "₹4,500",
       includes: ["Pick up from hotel", "Tirumala temple visit", "Waiting time included", "Drop back to hotel"],
       vehicle: "AC Sedan/SUV"
     },
     {
       name: "Tirupati City Tour",
       duration: "8 Hours", 
-      price: "₹1,200",
+      price: "₹3,200",
       includes: ["ISKCON Temple", "Chandragiri Fort", "Sri Venkateswara Museum", "Local markets"],
       vehicle: "AC Sedan"
     },
     {
       name: "Airport Transfer",
       duration: "As needed",
-      price: "₹800",
+      price: "₹2500",
       includes: ["Renigunta Airport pickup", "Direct transfer", "Luggage assistance", "Flight tracking"],
       vehicle: "AC Sedan"
     }
