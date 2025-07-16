@@ -4,7 +4,7 @@ import { Phone, MessageCircle, Clock, Shield, Star, Car, Plane, Mountain } from 
 // Data for the new FeaturedPackages component, based on the image
 const featuredPackagesData = [
   {
-    image: 'public/images/kanchi.jpeg', // Add this image to your /public/images folder
+    image: '/images/kanchi.jpeg', // Add this image to your /public/images folder
     title: 'Kachipuram Temples Taxi',
     temples: 'Tiruttani temple, Kanchipuram (3) temples',
     prices: [
@@ -19,7 +19,7 @@ const featuredPackagesData = [
     ],
   },
   {
-    image: 'public/images/tirumala.jpeg', // Add this image to your /public/images folder
+    image: '/images/tirumala.jpeg', // Add this image to your /public/images folder
     title: 'Tirumala Taxi Package',
     temples: 'Varahaswamy temple, Balaji Darshan, Padmavathi Temple',
     prices: [
@@ -34,7 +34,7 @@ const featuredPackagesData = [
     ],
   },
   {
-    image: 'public/images/isckon.jpeg', // Add this image to your /public/images folder
+    image: '/images/isckon.jpeg', // Add this image to your /public/images folder
     title: 'Tirupati 5 local Temples',
     temples: 'Padmavathi Temple, Kapilatheertham, Iskon temple, Govindaraja swamy temple, Srikalahasti temple',
     prices: [
@@ -49,7 +49,7 @@ const featuredPackagesData = [
     ],
   },
     {
-    image: 'public/images/arunachalanm with golden temple.webp  ', // Add this image to your /public/images folder
+    image: '/images/arunachalanm with golden temple.webp  ', // Add this image to your /public/images folder
     title: 'Arunachalam 2 Days',
     temples: 'Kanipakam, Golden temple, Arunachalam, Kanchipuram (3) temples, Tiruttani Temple',
     prices: [
