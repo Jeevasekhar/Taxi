@@ -135,23 +135,202 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Service Area Coverage */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Service Coverage Area</h2>
-            <p className="text-xl text-gray-600">We serve Tirupati and surrounding areas</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {['Tirumala', 'Renigunta Airport', 'Chandragiri', 'Kanipakam', 'Srikalahasti', 'Puttur', 'Chittoor', 'Chennai Airport'].map((location, index) => (
-              <div key={index} className="bg-white rounded-lg p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                <MapPin className="h-6 w-6 text-yellow-500 mx-auto mb-2" />
-                <span className="font-medium">{location}</span>
-              </div>
-            ))}
+ 
+
+
+<div className="bg-gray-100 py-8 px-4">
+  <div className="container mx-auto">
+    <h1 className="text-4xl font-extrabold text-brand-dark mb-8">Trips</h1>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      {/* 1. Tirupati to Kanipakam */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">11% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/kanipakam.jpg" alt="Kanipakam Temple" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">Tirupati to Kanipakam Taxi Service</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 12 Hours</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹4,500</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹4,000</p>
+            <p className="text-xs text-green-600">You save ₹500</p>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* 2. Tirupati to Kanchipuram */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">9% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/kanchi.jpeg" alt="Kanchipuram Temple" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">Tirupati to Kanchipuram Taxi Service</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 12 Hours</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹5,500</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹5,000</p>
+            <p className="text-xs text-green-600">You save ₹500</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 3. Ultimate Tirupati 2 Days */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">6% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/ultimate tirupati.jpeg" alt="Tirupati Balaji" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">Ultimate Tirupati 2 Days Taxi Package</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 2 Days</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹8,000</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹7,500</p>
+            <p className="text-xs text-green-600">You save ₹500</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 4. Tirupati to Mahabalipuram */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">9% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/Mahabalipuram-1200x628.webp" alt="Mahabalipuram Temple" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">Tirupati to Mahabalipuram Taxi Service</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 2 Days - 0 Nights</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹11,000</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹10,000</p>
+            <p className="text-xs text-green-600">You save ₹1,000</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 5. Tirupati to Arunachalam (Via Golden Temple & Kanchi) */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">14% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/arunachalanm with golden temple.webp" alt="Arunachalam with Golden Temple" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">Tirupati to Arunachalam Packages (Via Golden Temple & Kanchipuram)</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 2 Days - 1 Night</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹11,000</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹9,500</p>
+            <p className="text-xs text-green-600">You save ₹1,500</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 6. Tirupati to Arunachalam Taxi Service */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">11% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/arunachalam.webp" alt="Arunachalam City View" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">Tirupati to Arunachalam Taxi Service</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 15 Hours</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹8,500</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹7,600</p>
+            <p className="text-xs text-green-600">You save ₹900</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 7. Tirupati to Golden Temple Vellore */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">9% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/golden temple.jpg" alt="Golden Temple Vellore" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">Tirupati to Golden Temple Vellore Taxi Service</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 12 Hours</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹5,500</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹5,000</p>
+            <p className="text-xs text-green-600">You save ₹500</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 8. Tirupati 5 Local Temples */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">11% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/isckon.jpeg" alt="Local Temples" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">Tirupati 5 Local Temples Taxi Service</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 12 Hours</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹4,500</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹4,000</p>
+            <p className="text-xs text-green-600">You save ₹500</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 9. Tirupati to Tirumala */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">14% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/tirumala.jpeg" alt="Tirumala Waterfalls" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">Tirupati to Tirumala Taxi Service</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 1 Day - 0 Nights</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹3,500</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹3,000</p>
+            <p className="text-xs text-green-600">You save ₹500</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 10. 2 Days Tirupati Balaji Darshan */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">6% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/balaji.jpeg" alt="Tirupati Balaji" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">2 Days Tirupati Balaji Darshan Package from Tirupati</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 2 Days - 1 Night</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹8,000</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹7,500</p>
+            <p className="text-xs text-green-600">You save ₹500</p>
+          </div>
+        </div>
+      </div>
+
+      {/* 11. 1 Day Tirupati Darshan */}
+      <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col relative">
+        <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">11% Off</div>
+        <div className="absolute top-2 right-2 bg-brand-orange text-white px-2 py-1 rounded text-xs font-semibold">Featured</div>
+        <img src="/images/tirupati.jpeg" alt="Tirupati Temple Complex" className="w-full h-56 object-cover" />
+        <div className="p-4 flex flex-col flex-grow">
+          <h3 className="text-lg font-bold text-brand-dark mb-2">1 Day Tirupati Darshan Package from Tirupati</h3>
+          <p className="text-sm text-gray-500 mb-4">Duration: 12 Hours</p>
+          <div className="mt-auto">
+            <p className="text-sm text-gray-500">From <span className="line-through">₹4,500</span></p>
+            <p className="text-xl font-bold text-brand-dark">₹4,000</p>
+            <p className="text-xs text-green-600">You save ₹500</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
       {/* Testimonials */}
       <section className="py-16 bg-white">
