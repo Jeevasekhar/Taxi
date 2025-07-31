@@ -4,13 +4,14 @@ import { Phone, MessageCircle, Clock, Shield, Star, Car, Plane, Mountain } from 
 // Data for the new FeaturedPackages component, based on the image
 const featuredPackagesData = [
   {
-    image: '/images/kanchi.jpeg', // Add this image to your /public/images folder
+    image: '/images/kanchi.jpeg',
     title: 'Kachipuram Temples Taxi',
     temples: 'Tiruttani temple, Kanchipuram (3) temples',
     prices: [
-      { vehicle: 'Etios - 4 persons', price: '₹4800' },
-      { vehicle: 'Ertiga - 5 persons', price: '₹6500' },
-      { vehicle: 'Innova - 6 persons', price: '₹8500' },
+      { vehicle: 'Etios - 4 persons', price: '₹4500' },
+      { vehicle: 'Ertiga - 5 persons', price: '₹5500' },
+      { vehicle: 'Innova - 6 persons', price: '₹6500' },
+      { vehicle: 'Crysta - 6 persons', price: '₹7000' },
       { vehicle: 'Tempo - 12 persons', price: '₹10500' },
       { vehicle: 'Tempo - 17 persons', price: '₹11500' },
       { vehicle: 'Mini bus - 20 persons', price: '₹13500' },
@@ -19,13 +20,13 @@ const featuredPackagesData = [
     ],
   },
   {
-    image: '/images/tirumala.jpeg', // Add this image to your /public/images folder
+    image: '/images/tirumala.jpeg',
     title: 'Tirumala Taxi Package',
     temples: 'Varahaswamy temple, Balaji Darshan, Padmavathi Temple',
     prices: [
       { vehicle: 'Etios - 4 persons', price: '₹2800' },
-      { vehicle: 'Ertiga - 5 persons', price: '₹3500' },
-      { vehicle: 'Innova - 6 persons', price: '₹4500' },
+      { vehicle: 'Ertiga - 5 persons', price: '₹3300' },
+      { vehicle: 'Innova - 6 persons', price: '₹4300' },
       { vehicle: 'Tempo - 12 persons', price: '₹5500' },
       { vehicle: '17 persons', price: '₹8300' },
       { vehicle: '20 persons', price: '₹11000' },
@@ -34,28 +35,28 @@ const featuredPackagesData = [
     ],
   },
   {
-    image: '/images/isckon.jpeg', // Add this image to your /public/images folder
+    image: '/images/isckon.jpeg',
     title: 'Tirupati 5 local Temples',
     temples: 'Padmavathi Temple, Kapilatheertham, Iskon temple, Govindaraja swamy temple, Srikalahasti temple',
     prices: [
-      { vehicle: 'Etios - 4 persons', price: '₹4000' },
-      { vehicle: 'Ertiga - 5 persons', price: '₹5000' },
-      { vehicle: 'Innova - 6 persons', price: '₹5,800' },
-      { vehicle: 'Tempo - 12 persons', price: '₹6500' },
+      { vehicle: 'Etios - 4 persons', price: '₹3000' },
+      { vehicle: 'Ertiga - 5 persons', price: '₹3500' },
+      { vehicle: 'Innova - 6 persons', price: '₹4000' },
+      { vehicle: 'Tempo - 12 persons', price: '₹6000' },
       { vehicle: 'Tempo - 17 persons', price: '₹9000' },
       { vehicle: 'Mini bus - 20 persons', price: '₹12000' },
       { vehicle: 'Mini bus - 27 persons', price: '₹16250' },
       { vehicle: 'Bus - 40 persons', price: '₹20000' },
     ],
   },
-    {
-    image: '/images/arunachalanm with golden temple.webp  ', // Add this image to your /public/images folder
+  {
+    image: '/images/arunachalanm with golden temple.webp',
     title: 'Arunachalam 2 Days',
     temples: 'Kanipakam, Golden temple, Arunachalam, Kanchipuram (3) temples, Tiruttani Temple',
     prices: [
-      { vehicle: 'Etios - 4 persons', price: '₹9500' },
-      { vehicle: 'Ertiga - 5 persons', price: '₹12500' },
-      { vehicle: 'Innova - 6 persons', price: '₹15500' },
+      { vehicle: 'Etios - 4 persons', price: '₹9000' },
+      { vehicle: 'Ertiga - 5 persons', price: '₹11000' },
+      { vehicle: 'Innova - 6 persons', price: '₹13000' },
       { vehicle: 'Tempo - 12 persons', price: '₹18500' },
       { vehicle: 'Tempo - 17 persons', price: '₹21000' },
       { vehicle: 'Mini bus - 20 persons', price: '₹27000' },
@@ -64,6 +65,7 @@ const featuredPackagesData = [
     ],
   },
 ];
+
 
 // The new component for the 4 featured packages
 const FeaturedPackages = () => {
@@ -106,6 +108,50 @@ const FeaturedPackages = () => {
         </div>
     );
 }
+
+// New Drop Taxi component
+const dropTaxiData = [
+  { destination: 'Chennai ', price: '₹4,500' },
+  { destination: 'Bangalore ', price: '₹6,500' },
+  { destination: 'Arunachalam ', price: '₹6,000' },
+  { destination: 'Hyderabad ', price: '₹15,500' },
+  { destination: 'Nellore ', price: '₹4,500' },
+  { destination: 'Vijayawada ', price: '₹12,000' },
+];
+
+const FeaturedDropTaxi = () => (
+  <div className="bg-blue-50 py-16">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Drop Taxi - One Way Outstation</h2>
+        <p className="text-lg text-blue-700">Best rates for one-way drop taxi from Tirupati to major cities</p>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="min-w-full bg-white rounded-lg shadow-md">
+          <thead>
+            <tr>
+              <th className="py-3 px-6 bg-blue-100 text-left text-sm font-semibold text-blue-900">Destination</th>
+              <th className="py-3 px-6 bg-blue-100 text-left text-sm font-semibold text-blue-900">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            {dropTaxiData.map((item, idx) => (
+              <tr key={idx} className="border-b last:border-b-0">
+                <td className="py-3 px-6 text-blue-800 font-medium">{item.destination}</td>
+                <td className="py-3 px-6 text-blue-800 font-semibold">{item.price}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="text-center mt-8">
+        <a href="https://wa.me/918801838383" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors">
+          Book Drop Taxi Now
+        </a>
+      </div>
+    </div>
+  </div>
+);
 
 const Home = () => {
   const testimonials = [
@@ -429,8 +475,10 @@ const Home = () => {
         </div>
       </div>
 
+
       {/* <<< NEW FEATURED PACKAGES SECTION INSERTED HERE >>> */}
       <FeaturedPackages />
+      <FeaturedDropTaxi />
 
       {/* Testimonials */}
       <section className="py-16 bg-white">
